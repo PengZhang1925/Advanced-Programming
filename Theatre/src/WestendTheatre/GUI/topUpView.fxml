@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WestendTheatre.GUI.topUpController">
+   <children>
+      <Label layoutX="212.0" layoutY="83.0" text="Top Up Page">
+         <font>
+            <Font name="Arial Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="memberID" layoutX="249.0" layoutY="267.0" prefHeight="50.0" prefWidth="200.0" />
+      <TextField fx:id="amount" layoutX="253.0" layoutY="380.0" prefHeight="50.0" prefWidth="200.0" />
+      <Button layoutX="185.0" layoutY="509.0" mnemonicParsing="false" onAction="#topUp" prefHeight="50.0" prefWidth="100.0" text="TopUp" />
+      <Button layoutX="317.0" layoutY="509.0" mnemonicParsing="false" onAction="#cancelTopUp" prefHeight="50.0" prefWidth="100.0" text="Cancel" />
+      <Button layoutX="449.0" layoutY="509.0" mnemonicParsing="false" onAction="#jumpToUpgrade" prefHeight="50.0" prefWidth="100.0" text="Upgrade" />
+      <Label layoutX="254.0" layoutY="221.0" text="Member ID:">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="336.0" text="Amount:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="267.0" prefHeight="35.0" prefWidth="200.0" text="MemberBalance:" />
+      <Label fx:id="balanceStatus" layoutX="35.0" layoutY="300.0" prefHeight="35.0" prefWidth="200.0" />
+      <Button layoutX="449.0" layoutY="267.0" mnemonicParsing="false" onAction="#balanceCheck" prefHeight="50.0" prefWidth="100.0" text="balanceCheck" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WestendTheatre.GUI.cancelBookingController">
+   <children>
+      <Label layoutX="183.0" layoutY="48.0" prefHeight="100.0" prefWidth="400.0" text="Cancel Booking Here!!!">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <ListView fx:id="bookingList" layoutX="27.0" layoutY="223.0" prefHeight="400.0" prefWidth="400.0" />
+      <Label layoutX="32.0" layoutY="185.0" text="My Booking:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="473.0" layoutY="386.0" mnemonicParsing="false" onAction="#CancelBooking" prefHeight="100.0" prefWidth="200.0" text="Cancel It">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="471.0" layoutY="518.0" mnemonicParsing="false" onAction="#Back" prefHeight="100.0" prefWidth="200.0" text="Back">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

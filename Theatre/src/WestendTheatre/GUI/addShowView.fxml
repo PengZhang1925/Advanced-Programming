@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WestendTheatre.GUI.addShowController">
+   <children>
+      <Label layoutX="150.0" layoutY="51.0" prefHeight="100.0" prefWidth="400.0" text="Add Show Here!!" textFill="#2a0af8" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="48.0" />
+         </font></Label>
+      <TextField fx:id="showVenue" layoutX="441.0" layoutY="339.0" prefHeight="40.0" prefWidth="140.0" promptText="venue" />
+      <DatePicker fx:id="showDate" layoutX="440.0" layoutY="438.0" prefHeight="40.0" prefWidth="160.0" promptText="date" />
+      <Label layoutX="447.0" layoutY="310.0" text="Show Venue:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="407.0" text="Show Date:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="showName" layoutX="442.0" layoutY="243.0" prefHeight="40.0" prefWidth="140.0" promptText="Name" />
+      <Label layoutX="447.0" layoutY="210.0" text="Show Name:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="443.0" layoutY="587.0" mnemonicParsing="false" onAction="#addShow" prefHeight="50.0" prefWidth="100.0" text="Add" />
+      <Button layoutX="567.0" layoutY="586.0" mnemonicParsing="false" onAction="#CancelShow" prefHeight="50.0" prefWidth="100.0" text="Cancel" />
+      <Label layoutX="54.0" layoutY="211.0" text="What's On:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="502.0" text="Show Time:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="showTime" layoutX="440.0" layoutY="531.0" prefHeight="40.0" prefWidth="140.0" promptText="Time in hour24" />
+      <ListView fx:id="showList" layoutX="53.0" layoutY="239.0" prefHeight="400.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>
